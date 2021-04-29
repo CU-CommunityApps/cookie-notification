@@ -1,0 +1,85 @@
+/* Reset */
+.cookieConsentContainer {
+    z-index: 999;
+    width: 350px;
+    min-height: 20px;
+    box-sizing: border-box;
+    padding: 30px 30px 30px 30px;
+    background: #222222;
+    overflow: hidden;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    display: none;
+    opacity: 0.5;
+}
+.cookieConsentContainer .cookieTitle a {
+    font-family: OpenSans, arial, "sans-serif";
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 20px;
+    display: block;
+}
+.cookieConsentContainer .cookieDesc p {
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans, arial, "sans-serif";
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 20px;
+    display: block;
+    margin-top: 10px;
+} 
+
+.cookieConsentContainer .cookieDesc a {
+    font-family: OpenSans, arial, "sans-serif";
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.cookieConsentContainer .cookieDesc a:hover, cookieConsentContainer .cookieDesc a:focus {
+  color: #cecdcd;
+}
+
+.cookieButton {
+  background-color: #b31b1b; 
+  font-family: OpenSans, arial, "sans-serif";
+  border: none;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 15px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+
+.cookieConsentContainer .cookieButton a {
+  color: #ffffff;
+}
+ 
+.cookieConsentContainer .cookieButton:focus {
+  color: #ffffff;
+}
+
+.cookieConsentContainer .cookieButton:hover { 
+    cursor: pointer;
+    background: #7c0b0b;
+    color: #ffffff;
+}
+
+.cookieConsentContainer :focus {
+    outline: 0;
+    box-shadow: 0 0 0 4px rgba(45, 135, 184, 0.5);
+    box-shadow: 0 0 0 2px white, 0 0 0 5px rgba(43, 163, 227, 0.4);
+}
+
+@media (max-width: 980px) {
+    .cookieConsentContainer {
+        bottom: 0px !important;
+        left: 0px !important;
+        width: 100%  !important;
+    }
+}
